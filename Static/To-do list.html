@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <style>
+        .container{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <nav>
+            <form id="myForm">
+                <input id="myInput" type="text">
+                <button>Create item</button>
+            </form>
+        </nav>
+
+        <main>
+            <h2>Things to do</h2>
+            <ul id="myList"></ul>
+        </main>
+
+    </div>
+
+    <script>
+         let myForm = document.getElementById("myForm");
+         let myInput = document.getElementById("myInput");
+         let myList = document.getElementById("myList");
+
+        myForm.addEventListener("submit", (data) => {
+            data.preventDefault()
+            createItem(myInput.value)
+        })
+
+        createItem = (d)=> {
+           let myTemplates = `<li>${d}<button onclick = "RemoveItem(this)">Delete</button></li>`
+           myList.insertAdjacentHTML("beforeend",myTemplates)
+           myInput.value = "";
+           myInput.focus();
+        }
+        function RemoveItem(x) {
+            x.parentElement.remove();
+        }
+
+    </script>
+</body>
+</html>

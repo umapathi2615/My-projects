@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grandparent{
+            height: 80%;
+            width: 100%;
+            border: 1px solid black ;
+            display: block;
+            text-align: center;
+            justify-content: space-evenly;
+            align-items: center;
+            
+
+        }
+        .grandparent p,b{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="grandparent">
+        <!-- <p>Lorem <b>ipsum</b> dolor sit amet.</p>
+        <p>Lorem <b>ipsum</b> dolor sit amet.</p> -->
+
+        <b>one</b>
+        <b>two</b>
+        <br><br><br><br><br><br><br>
+        <img src="../Templates/Images/Dog.jpg" alt="dog"><br>
+        <!-- <button>button</button><br>
+        <input type="button" value="click"><br> -->
+        <form action="">
+            <label for="">text</label><br>
+            <input type="text" name="" id=""><br>
+            <label for="">number</label><br>
+            <input type="number" name="" id=""><br>
+            <label for="">email</label><br>
+            <input type="email" name="" id=""><br>
+            <label for="">password</label><br>
+            <input type="password" name="" id=""><br>
+            <button>email</button>
+        </form>
+
+    
+
+
+    </div>
+
+
+ 
+    <!-- <p id="demo">12345</p>
+    <p id="a">12345</p> -->
+  
+    <!-- <input type="text" id="one">
+    <button  onclick="check()">check</button> -->
+    <script>
+      
+
+        //*javascript types
+       
+    //    let name = "umapathi";
+    //    console.log(typeof name+"<br>");
+
+    //    let age = 26;
+    //    console.log(typeof age+"<br>");
+
+    //    let isMarried = false;
+    //    console.log(typeof isMarried+"<br>");
+
+    //    let colours = undefined;
+    //    console.log(typeof colours+"<br>");
+
+    //    let selectColor = null;
+    //    console.log(typeof selectColor+"<br>");
+
+        //javascripts variables
+        
+        // let name = "umapathi";
+        // let age  =  26;
+        // let hobby = "learning"
+
+        // let user = {
+        //     name : 'umapathi',
+        //     age : 26,
+        //     hobby : 'learning',
+        // }
+
+        // console.log(user);
+        // console.log(user.hobby);
+        // console.log(user.age);
+        // console.log(user.name);
+
+        // console.log(user['age']);
+
+        //*javascript arrays 
+
+    //     let friends = ["umapathi","ronaldo","rock"]
+
+    //     console.log(friends);
+    //     console.log(friends[0]);
+    //     console.log(friends.length);
+    //     console.log(typeof friends)
+
+
+    //    alert("Welcome to Javascript");
+
+        // function showMyName(name) {
+        //     console.log('my value is '+name);
+        // }
+        // showMyName('arquments');
+        // showMyName('ments');
+        // showMyName('arqus');
+
+
+        // let num1 = 50;
+        // let num2 = 50;
+        // let sum = num1 + num2;
+
+        // console.log(sum);
+
+        // *functions in javascript
+
+    //    function calcSum(num1,num2) {
+    //        const sum = (num1 + num2)
+    //        return sum;
+    //    }
+    //    const result = calcSum(30,20);
+    //    console.log(result);
+
+          //*Template literls
+
+        //   let name = `uma`;
+        //   console.log(`my name is ${name}`);
+
+        //   console.log(`${20+30}`);
+
+        //   let message = `my name is \n umapathi`;
+        //   console.log(message);
+
+        //    //*Excersize
+
+        //    let person = {
+        //        name : `umapathi`,
+        //        age  :26,
+        //        isMarried : true,
+
+        //        homeAddress: {
+        //            long : 44.33,
+        //            lat  : 33.44,
+        //        },
+
+        //        friends:["umapathi","dani","anna pondiyan"],
+
+        //    };
+
+        //    console.log(person);
+        //    console.log(person.name);
+        //    console.log(person.homeAddress);
+        //    console.log(person.friends[2]);
+        //    console.log(typeof person);
+
+        //*Arithmetic operators
+
+        // let num1 = 10;
+        // let num2 = 5;
+
+        // console.log(num1+num2);
+        // console.log(num1-num2);
+        // console.log(num1*num2);
+        // console.log(num1/num2);
+        // console.log(num1 ** num2);
+        // console.log(num1 % num2);
+
+        //*Assignment operators
+
+        // let num1 = 10;
+        // let num2 = num1;
+        // console.log(num2);
+
+        // let num3 = 10;
+        // let num4 = 5;
+        // console.log(num3+num4);
+
+
+        //*Comparison operators
+        // < > <= >= === !==
+
+        // let price = 200;
+        // console.log(price < 500);
+        // console.log(price > 500);
+        // console.log(price <= 500);
+        // console.log(price >= 500);
+        // console.log(price === 500);
+        // console.log(price !== 500);
+
+
+        //*Logical operators
+        // and &&, or||, not(!)
+
+        // let price = 10;
+        // console.log(price > 50 && price < 15);
+        // // two condition should be true - answer true
+
+        // console.log(price > 50 || price < 15);
+        // // one condition should be true - answer true
+
+        // console.log(!(price > 50));
+        // answer should be not equal - answer is true
+
+
+        //*Equality operators
+
+        // let price = 10;
+        // console.log(price === 10);
+        // console.log(price !== 20);
+
+        // console.log(price == 10);
+        // console.log(price != 10);
+
+
+        //*Problem - swap to numbers
+
+        // let apple = 10;
+        // let orange = 20;
+
+        // let temp = apple;
+
+        // apple = orange,
+        // orange = temp,
+
+        // console.log(apple,orange);
+
+
+        //*Conditional statements
+
+        // var number = 3;
+
+        // if(number > 5){
+        //     console.log("true");
+        // } else if(number < 5){
+        //     console.log("false");
+        // } else{
+        //     console.log("nothing");
+        // };
+
+
+        //*Switch case 
+
+        // let colour = "black";
+
+        // switch(colour) {
+
+        //     case "black":
+        //     console.log("this is black");
+        //     break;
+
+        //     case "white":
+        //     console.log("this is white");
+        //     break;
+
+        //     case "red":
+        //     console.log("this is red");
+        //     break;
+
+        // };
+
+        //*ternary operators
+
+        // let number1 = 10;
+        // let number2 = 2;
+
+        // let maxValue;
+
+        // if(number1 > number2){
+        //     maxValue = number1
+            
+        // }else{
+        //     maxValue = number2
+        // }
+
+        // let max = number1 > number2 ? number1 : number2
+        // console.log(max);
+
+        //practise time
+
+        // let number = 10;
+
+        // if(number % 3 === 0 && number % 5 === 0 ){
+        //     console.log("fizzbuzz")
+        // }
+        // else if(number % 3 === 0){
+        //     console.log("fizz");
+        // }
+        // else if(number % 5 === 0) {
+        //     console.log("buzz");
+        // } 
+        // else{
+        //     console.log("nothing");
+        // };
+        
+
+        // ternary operators
+        // let number = 10;
+
+        // console.log(number % 3 === 0 && number % 5 === 0
+        // ?"fizzbuzz"
+        // :number % 3 === 0
+        // ?"fizz"
+        // :number % 5 === 0
+        // ?"buzz"
+        // :"nothing"
+        // );
+
+        //*practise time
+
+        // let number = 101;
+
+        // if(number >= 0 && number<= 32){
+        //     console.log("A");
+        // }else if(number >= 33 && number <= 40){
+        //     console.log("A+");
+        // }else if(number >= 40 && number <=50){
+        //     console.log("B");
+        // }else if(number >= 50 && number <= 75){
+        //     console.log("C");
+        // }else if(number >= 75 && number <= 100){
+        //     console.log("D");
+        // }else{
+        //     console.log("invalid")
+        // }
+
+        //switch case practise
+
+
+        // let number = 0;
+
+        // switch(true){
+        //     case number > 0:
+        //     console.log("positive");
+        //     break;
+
+        //     case number === 0:
+        //     console.log("equal");
+        //     break;
+
+        //     case number < 0:
+        //     console.log("negative");
+        //     break;};
+
+
+        // let x, y, z;
+        //     x = 5;
+        //     y = 6;
+        //     z = x+y;
+
+        //     document.getElementById('demo').innerHTML="the value of z is"+z+"."
+
+
+        
+
+        // function check() {
+
+        //     //NO - 1 (GETTING VALUE FROM INPUT TAG - NAMED AS ONE)
+        //     let name = document.getElementById("one").value;
+        // document.write(name+"<br>");
+        // document.write(typeof name+"<br>");
+
+        //      //NO - 2 (STRING TO ARRAY)
+        // let arr = name.split("");
+        // document.write(arr+"<br>");
+        // document.write(typeof arr+"<br>");
+
+        //     //NO - 3 (ARRAY REVERSE)
+        // let rev = arr.reverse("");
+        // document.write(rev+"<br>");
+        // document.write(typeof rev+"<br>");
+            
+        //     //NO - 4 (ARRAY JOINING)
+        // let join = rev.join("");
+        // document.write(join+"<br>");
+        // document.write(typeof join+"<br>");
+        // }
+        
+        // function check() {
+
+//NO - 1 (GETTING VALUE FROM INPUT TAG - NAMED AS ONE)
+// let name = document.getElementById("one").value;
+// // document.write(name+"<br>");
+// // document.write(typeof name+"<br>");
+
+//  //NO - 2 (STRING TO ARRAY)
+// let arr = name.split("");
+// // document.write(arr+"<br>");
+// // document.write(typeof arr+"<br>");
+
+// //NO - 3 (ARRAY REVERSE)
+// let rev = arr.reverse("");
+// // document.write(rev+"<br>");
+// // document.write(typeof rev+"<br>");
+
+// //NO - 4 (ARRAY JOINING)
+// let join = rev.join("");
+// // document.write(join+"<br>");
+// // document.write(typeof join+"<br>");
+
+// if(name == join){
+// alert(name + " is palindrome");
+// }
+// else{
+// alert(name + "is not palindrome")
+// }
+
+// // }
+
+    </script>
+</body>
+</html>

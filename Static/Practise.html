@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="myFunction()">click here</button>
+
+    <p><span id="demo"></span></p>
+    <p id="demo1"></p>
+    <p id="demo5"></p>
+    <p id="demo3" style="display: none">none and block</p>
+    <button type="button" onclick="myFunction()">Sort alphabetically</button>
+    <button type="button" onclick="myFunction1()">sort numerically</button>
+    <button type="button" onclick="display1()">close</button>
+    <button onclick="this.innerHTML= Date()">cccccs</button>
+    
+    <script>
+        function displayDate (){
+            document.getElementById("demo").innerHTML= Date();
+        }
+    //  function display(){
+    //      console.log(window)
+    //      console.log(window.port);
+    //      console.log(window.innerHeight);
+    //  };
+     
+//     let name = "umapathi";
+//     let age = 26;
+//     let isApproved = true;
+//     let value = undefined;
+//     let selectColor = null;
+
+//     console.log(typeof name,age,isApproved,value,selectColor);
+
+//     let person = {
+//         name : "umapathi",
+//         age : 26,
+//     }
+//     console.log(person);
+
+//     document.addEventListener("click",message);
+//     function message(){
+//         alert(12345)
+//     }
+
+//     let selectedColor = ["u","m"]
+//     selectedColor[2] = "a" 
+//     console.log(selectedColor);
+
+//     function greet(name,lastname){
+//         console.log("hello"+" "+name+" "+lastname)
+//     }
+//     greet("umaapathi","B")
+
+//     function square(numer){
+//         return numer * numer
+//     }
+//     numer= square(25)
+//     console.log(numer);
+
+
+//     function myFunction(){
+//         alert("hello world")
+//     }
+//     myFunction();
+
+
+// function myFunction(a,b){
+//     return a*b;
+// }
+// console.log(myFunction(5,3));
+
+// function greet(name){
+//     alert(name)
+// }
+// greet("john")
+
+// let fruits = ["one","two","three","four"];
+// document.getElementById("demo").innerHTML= "helo man: "+fruits[3]
+// delete fruits[1];
+// document.getElementById("demo1").innerHTML="hello this is : "+fruits[1];
+
+// let fruits = ["apple","mango","melon"]
+// fruits.splice(1,0,"lemon","kiwi");
+// document.getElementById("demo").innerHTML=fruits;
+
+// document.getElementById("demo").style.display="none";  
+// document.getElementById("demo").style.fontSize="50px";  
+
+
+// document.getElementById("demo1").innerHTML= "hello javascript";
+// document.getElementById("demo1").style.fontSize ="100px";
+
+// function myFunction(){
+//     alert("hello man")
+// }
+// document.getElementById("demo").innerHTML= 5*3;
+//  function print(){
+//     onclick= "print()"
+ 
+
+ // statements in js
+// var a, b, c ;
+// a=1;
+// b=2;
+// c= a+b;
+// alert(c);
+
+// function myFunction(){
+//     document.getElementById("demo").innerHTML= "hello mam";
+//     document.getElementById("demo5").innerHTML= "hello maam";
+// }
+ 
+
+// var x;
+// let y;
+// x = 4 + 3;
+// y = 3 + 2;
+// let z = x+y;
+
+
+// let lastname, lastName;
+// lastName = "one";
+// lastname = "zero";
+// document.getElementById("demo1").innerHTML= lastname;
+
+
+// myFunction();
+// function myFunction(){
+//     let fName = "john";
+//     document.getElementById("demo").innerHTML = fName + " " +typeof fName ;
+//     }
+//     document.getElementById("demo1").innerHTML = typeof fName ;
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   id: 5566,
+//   fullName: function() {
+//     return this.firstName + " " + this.lastName;
+//   }
+// };
+
+// // Display data from the object:
+// document.getElementById("deo").innerHTML = person.fullName();
+
+// const car = {
+//     name : "kia",
+//     model: "999",
+//     color: "white",
+//     fullname: function(){
+//         return this.name + " " + this.model + " " + this.color;
+//     }
+
+// };
+// document.getElementById("demo").innerHTML = car.fullname();
+
+// let name = "umapathi is\' a \"superman\" from india";
+// document.getElementById("demo").innerHTML= name;
+// const number = "one, two, three";
+// document.getElementById("demo").innerHTML = number.substr(10,5);
+
+// function myFunction(){
+//     let text = document.getElementById("demo").innerHTML;
+//     document.getElementById("demo").innerHTML = 
+//     text.replace("world","universel");
+// }
+
+// function myFunction(){
+//    let text = document.getElementById("demo").innerHTML;
+//     document.getElementById("demo").innerHTML = text.toUpperCase();
+// }
+
+// let text1 = "hello" + "wld";
+// let text2 = "world";
+// let text3 = text1.concat(" "+ text2);
+// let text = document.getElementById("demo").innerHTML = text1;
+
+// let text = "     jonny     ";
+// let text1 = text.trim();
+// let text2 = document.getElementById("demo").innerHTML = "the value is " + text.length+ "<br>" + "the value is " + text1.length;
+
+// let text = "Hello";
+// let text2 = document.getElementById("demo").innerHTML = text.padStart(8,5);
+
+//  PADSTART();
+// let numb = 5;
+// let text = numb.toString();
+// document.getElementById("demo").innerHTML = text.padStart(4,0);
+
+// //PADEND();
+// let numb = "5";
+// document.getElementById("demo").innerHTML = numb.padEnd(4,0);
+
+//charAt()
+
+// let text = "HELLO WORLD";
+// document.getElementById("demo").innerHTML= text.charAt(1);
+
+//STRING TO ARRAY
+
+// let value = "helllo"
+// const arr = value.split("");
+// document.getElementById("demo").innerHTML = arr[1];
+
+// let firstName = "john";
+// let lastName = "doe"
+
+// let name = `welcome ${firstName},${lastName}`;
+// document.getElementById("demo").innerHTML = name;
+
+//JAVASCRIPT STRING INDEXOF()
+
+// let str = "please locate where 'locate occurs!'";
+// document.getElementById("demo").innerHTML = str.indexOf("locate");
+
+//JAVASCRIPT STRING LASTINDEXOF()
+
+// let str = "please locate where 'locate occurs!'";
+// document.getElementById("demo").innerHTML = str.lastIndexOf("locate");
+
+//JAVASCRIIPT STRING MATCH();
+
+// let text = "The rain in SPAIN stays mainly in the plain";
+// document.getElementById("demo").innerHTML = text.match(/in/gi);
+
+//JAVASCRIPT STRING INCLUDES();
+
+// let text = "The rain in SPAIN stays mainly in the plain";
+// document.getElementById("demo").innerHTML = text.includes("world");
+
+// TEMPLATE LITARALS
+
+// let firstName = "john";
+// let lastName = "doe";
+
+// Text = `welcome ${firstName}, ${lastName}`;
+// document.getElementById("demo").innerHTML = Text;
+
+//   let a = 5;
+//   //a += 2;
+//   a = a+2;
+//   alert (a);
+
+// let arr = [1,2,3,4,5];
+// for(let i of arr){
+//     para += `${i} <br>`;
+// }
+
+// let para = document.getElementById("demo").innerHTML;
+// let str = ""; 
+
+
+// let r  = 25;
+// let y  = new Number(25);
+// console.log(typeof y);
+
+// let number = 22.14524;
+// document.getElementById("demo").innerHTML = number.toFixed(0);
+
+//parseInt
+// document.getElementById("demo").innerHTML = parseInt(10.252);
+
+//parseFloat
+// document.getElementById("demo").innerHTML = parseFloat(10.252);
+
+// let x = 123;
+// document.getElementById("demo").innerHTML = x.valueOf() + "<br>" + (123).valueOf() + "<br>" + (100+23).valueOf();
+
+
+//Number method
+// document.getElementById("demo").innerHTML = Number("125");
+
+//Date
+// document.getElementById("demo").innerHTML = new Date();
+
+//MAX_VALUE, MIN_VALUE, POSITIVE_INFINITY, NEGATIVE_INFINITY;
+// let x = Number.MAX_VALUE;
+// document.getElementById("demo").innerHTML = x;
+
+//NaN
+// let x = 100/"apple";
+// document.getElementById("demo").innerHTML = x;
+
+//                                ARRAY
+// const cars = ["kia", "bmw", "benz"];
+// document.getElementById("demo").innerHTML = cars ;
+
+// const cars = [];
+// cars[0] = "kia";
+// cars[1] = "bmw";
+// cars[2] = "audi";
+// document.getElementById("demo").innerHTML = cars ;
+
+//Another array method (optional)
+// const cars = new Array("saab","benz","ford");
+// document.getElementById("demo").innerHTML = cars;
+
+// const cars = ["kia","ford","bmw","audi"];
+// cars[1] = "change";
+// document.getElementById("demo").innerHTML = cars[1];
+// console.log(cars[2]);
+//Array object
+
+// let person = {
+//     firstName : "john",
+//     lastName : "Doe",
+//     age : 25
+// }
+// document.getElementById("demo").innerHTML = person;
+
+//Array length
+// const fruits = [ "mango","cherry","banana","apple","goa" ];
+// document.getElementById("demo").innerHTML = fruits.length;
+
+// Array loop
+
+// const fruits = ["apple","dragon", "lemon", "pineapple", "orange"]
+// let length = fruits.length;
+
+// let text = "";
+// for( let i = 0; i < length; i++){
+//     text += "<li>" + fruits[i] + "</li>";
+// }
+// document.getElementById("demo").innerHTML = text;
+
+//Array push
+// const fruits = ["apple","dragon", "lemon", "pineapple", "orange"]
+// document.getElementById("demo").innerHTML = fruits;
+
+// function push(){
+//     fruits.push("stawberry");
+//     document.getElementById("demo").innerHTML = fruits;
+// }
+
+//undefined loops
+// const fruits = ["apple","dragon", "lemon", "pineapple", "orange"]
+// fruits[8] = "country fruit";
+// let length = fruits.length;
+
+// let text = "";
+// for( let i = 0; i < length; i++){
+//     text += "<li>" + fruits[i] + "</li>";
+// }
+// document.getElementById("demo").innerHTML = text;
+
+//                     Array methods
+// let fruit = ["mango","apple","lemon"]
+// document.getElementById("demo").innerHTML = fruit.join("");
+
+//pop
+// let fruit = ["mango","apple","lemon"]
+// document.getElementById("demo").innerHTML = fruit;
+// fruit.pop();
+// document.getElementById("demo1").innerHTML = fruit;
+
+
+//  let fruit = ["mango","apple","lemon"]
+//  document.getElementById("demo").innerHTML = fruit;
+//  delete fruit[2];
+// document.getElementById("demo1").innerHTML = fruit;
+
+//push
+// let fruit = ["mango","apple","lemon"]
+// document.getElementById("demo").innerHTML = fruit;
+// fruit.push("pineapple");
+// document.getElementById("demo1").innerHTML = fruit;
+
+// let fruit = ["mango","apple","lemon"]
+// document.getElementById("demo").innerHTML = fruit;
+// fruit[fruit.length] = "kiwi";
+// document.getElementById("demo1").innerHTML = fruit;
+
+//shift
+// let fruit = ["mango","apple","lemon"]
+// document.getElementById("demo").innerHTML = fruit;
+// fruit.shift();
+// document.getElementById("demo1").innerHTML = fruit;
+
+//unshift
+// let fruit = ["mango","apple","lemon"]
+// document.getElementById("demo").innerHTML = fruit;
+// fruit.unshift("kiwi");
+// document.getElementById("demo1").innerHTML = fruit;
+
+// let fruit = ["mango","apple","lemon"]
+//  document.getElementById("demo").innerHTML = fruit;
+//  fruit[0] = "cherry";
+//  document.getElementById("demo1").innerHTML = fruit;
+
+//concatinating
+// let boys = ["sachin","sehwag","yuvi"];
+// let girls = ["sindhu","pt usha","raveena"];
+// let concat = boys.concat(girls);
+// document.getElementById("demo").innerHTML = concat;
+
+//splice
+// let fruit = ["mango","apple","lemon"];
+// document.getElementById("demo").innerHTML = fruit;
+// fruit.splice(1,0, "cherry");
+// document.getElementById("demo1").innerHTML = fruit;
+
+//slice
+// let fruit = ["mango","apple","lemon"];
+// document.getElementById("demo").innerHTML = fruit;
+// let slice = fruit.slice(1)
+// document.getElementById("demo1").innerHTML = slice;
+
+
+// let fruits = ["mango", "apple", "lemon", "pineapple", "kiwi"]
+// document.getElementById("demo").innerHTML = fruits;
+// let slice = fruits.slice(1,4);
+// document.getElementById("demo1").innerHTML = slice;
+
+//                  ARRAY SORT
+//Array sort
+// let fruits = ["mango", "apple", "lemon", "pineapple", "kiwi"]
+// fruits.sort();
+// document.getElementById("demo").innerHTML = fruits;
+
+//Reversing array
+// let fruits = ["mango", "apple", "lemon", "pineapple", "kiwi"]
+// fruits.sort();
+// document.getElementById("demo").innerHTML = fruits;
+// fruits.reverse();
+// document.getElementById("demo1").innerHTML = fruits;
+
+//Numeric sort
+// const points = [40, 100, 1, 5, 25, 10];
+// document.getElementById("demo").innerHTML = points;
+// points.sort(function(a,b){return(a-b)});
+// document.getElementById("demo1").innerHTML = points;
+
+//same trick for array sort decending
+//  const points = [40, 100, 1, 5, 25, 10];
+//  document.getElementById("demo").innerHTML = points;
+//  points.sort(function(a,b){return(b-a)});
+//  document.getElementById("demo1").innerHTML = points;
+
+// const points = [40, 100, 1, 5, 25, 10];
+// document.getElementById("demo").innerHTML = points;
+
+// function myFunction(){
+//     points.sort();
+//     document.getElementById("demo").innerHTML = points;
+// }
+// function myFunction1(){
+//     points.sort(function(a,b){return(a-b)});
+//     document.getElementById("demo").innerHTML = points;
+// }
+
+//sorting array randomly
+// const points = [40, 100, 1, 5, 25, 10];
+// document.getElementById("demo").innerHTML = points;
+
+// function myFunction(){
+//     points.sort(function(a,b){return 0.5 - Math.random()});
+//     document.getElementById("demo").innerHTML = points;
+// }
+
+//lowest number
+// const points = [40, 100, 1, 5, 25, 10];
+// points.sort(function(a,b){return(a-b)});
+// document.getElementById("demo").innerHTML = points;
+
+//heighest number in functions
+// const points = [40, 100, 1, 5, 25, 10];
+// function arrayMax(d){
+//     return Math.max.apply(null,d);
+// }
+// document.getElementById("demo").innerHTML = arrayMax(points);
+
+//lowest number in functions
+// const points = [40, 100, 1, 5, 25, 10];
+// document.getElementById("demo").innerHTML = arrLow(points);
+// function arrLow(data){
+//     return Math.min.apply(null,data);
+// }
+
+//Object sort
+// const cars = [
+//   {type:"Volvo", year:2016},
+//   {type:"Saab", year:2001},
+//   {type:"BMW", year:2010}
+// ];
+
+// function displayCars(){
+//     document.getElementById("demo").innerHTML = 
+//     cars[0].type + " " + cars[0].year + "<br>" + 
+//     cars[1].type + " " + cars[1].year + "<br>" + 
+//     cars[2].type + " " + cars[2].year;
+// }
+
+// displayCars();
+// cars.sort(function(a,b){return a.year - b.year});
+// displayCars();
+
+
+
+
+
+</script>
+</body>
+</html>
